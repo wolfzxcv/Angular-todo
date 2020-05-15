@@ -1,0 +1,10 @@
+<div>
+  <span [ngClass]="setClass()" (click)="onToggle(todo)"
+    ><i *ngIf="todo.completed; else elseFont" class="fas fa-check-circle"></i
+  ></span>
+  <ng-template #elseFont><i class="far fa-times-circle"></i></ng-template>
+  <span class="title"> {{ todo.title }} </span>
+  <span class="trash" (click)="onDelete(todo)"
+    ><i class="fas fa-trash-alt"></i
+  ></span>
+</div>
