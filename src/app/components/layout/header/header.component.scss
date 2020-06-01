@@ -1,0 +1,15 @@
+.header {
+  @media (min-width: 1024px) {
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  background: #333;
+  color: #ffffff;
+  text-align: center;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
