@@ -2,16 +2,25 @@
   @media (min-width: 1024px) {
     width: 70vw;
     margin: 0 auto;
+
+    input[type="text"] {
+      flex: 10;
+    }
+
+    input[type="submit"] {
+      flex: 2;
+    }
   }
 
   display: flex;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+  }
 
   input[type="text"] {
-    flex: 10;
     padding: 5px;
   }
   input[type="submit"] {
-    flex: 2;
     &:hover {
       cursor: pointer;
       background: #333;
